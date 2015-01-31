@@ -1,0 +1,20 @@
+.gitignore
+iQabinetAutomation
+/target 
+IQAB-HOME-TEST/ 
+.project .classpath 
+.externalToolBuilders/ 
+.settings/ 
+/bin iqabinet.log 
+*.idea target/ 
+*.iml .idea/ 
+*.epoch 
+tm.out 
+tmlog*.log 
+.classpath 
+.project 
+*.settings 
+*.classpath 
+*.project 
+buildNumber.properties 
+*.log

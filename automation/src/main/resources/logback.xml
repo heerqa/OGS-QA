@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configuration file for LogBack (slf4J implementation)
+See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
+<configuration>
+
+  <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+    <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+      <driverClass>org.postgresql.Driver</driverClass>
+      <url>jdbc:postgresql://ec2-107-20-197-146.compute-1.amazonaws.com:5432/ddp2ls2viuvvof?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</url>
+      <user>axtwtleokjuebr</user>
+      <password>8J9LKKTpu1w-XsaFaBgXUiNzDM</password>
+    </connectionSource>
+  </appender>
+  
+  <root level="DEBUG" >
+    <appender-ref ref="DB" />
+  </root>
+</configuration>
